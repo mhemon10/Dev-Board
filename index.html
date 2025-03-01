@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="body" class="bg-[#F4F7FF] h-screen font-poppins">
+    <!-- header section navber -->
+     <header class="py-3 container mx-auto">
+        <nav class="py-3 px-4 bg-base-100 flex justify-between items-center rounded-xl">
+            <!-- left -->
+            <div class="flex gap-2 items-center md:gap-3 cursor-pointer">
+                <div>
+                    <img class="w-8 md:w-10" src="./assets/logo.png" alt="logo">
+                </div>
+                <h3 class="text-xl sm:text-2xl md:text-3xl">Dev <span class="font-bold">Board</span></h3>
+            </div>
+             <!-- Right -->
+
+             <div class="flex gap-2 md:gap-8">
+                <div class="flex items-center gap-3 px-2  bg-[#F4F7FF] rounded-full">
+                    <img src="assets/checkbox.png" alt="checkbox">
+                    <span class="text-xl sm:text-2xl md:text-3xl font-bold">23</span>
+                </div>
+                <div class="flex cursor-pointer bg-[#F4F7FF] items-center gap-3 p-3 md:p-4 rounded-full">
+                    <img class="sm:w-6 h-6 md:h-10 md:w-10 active:animate-spin" src="assets/theme-btn.png" alt="">
+                </div>
+             </div>
+        </nav>
+     </header>
+
+     <main class="py-3 container mx-auto">
+        <!-- main section -->
+        <div class="container max-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 ">
+                <section class="col-span-3 bg-white py-6 rounded-xl ">
+                    <!-- task head -->
+                    <div class="grid lg:grid-cols-4 grid-cols-1 gap-4  pb-4 px-6 md:pb-6">
+                        <div class="bg-[#F4F7FF] px-4 md:px-0  py-4 rounded-xl flex gap-6 sm:gap-0 justify-start md:justify-evenly items-center">
+                            <div class="h-10 md:h-16 w-10 md:w-16 rounded-full bg-white flex items-center justify-center">
+                                <img src="assets/checkbox.png" alt="">
+                            </div>
+                            <div>
+                                <p>Task Assigned</p>
+                                <h3 id="pending-task" class="text-[#00303C] text-2xl md:text-3xl font-bold">6</h3>
+                            </div>
+                        </div>
+                        <!-- discover -->
+
+                        <div class="md:col-span-2 bg-linear-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl flex justify-start items-center gap-6 pl-6 py-6 cursor-pointer">
+                            <img class="h-10 md:h-20 w-10 md:w-20" src="assets/board.png" alt="">
+                            <h3 class="text-base md:text-2xl font-semibold text-white">Discover Something <br> New Today!</h3>
+                        </div>
+                        <!-- calendar date -->
+                        <div  class="bg-[#F4F7FF] pl-2 py-4 px-3 rounded-xl flex gap-6 md:gap-2 justify-start md:justify-evenly items-center">
+                            <div class="h-16 w-16 rounded-full bg-white flex items-center justify-center">
+                                <img src="assets/calender.png" alt="">
+                            </div>
+                            <div>
+                                <p id="day">Wed,</p>
+                                <h3 id="Date"></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-dashed border-[1.5px] text-[#3752FD33]">
+
+                </section>
+            </div>
+        </div>
+     </main>
+</body>
+</html>
