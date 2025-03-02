@@ -106,17 +106,3 @@ function updateTime(id) {
     }, 1000);
 }
 
-function stopTime(event) {
-    const buttonId = event.target.id; 
-    const index = buttonId.replace("btn", ""); 
-    const timeId = `time${index}`;
-    
-    stoppedTimes[timeId] = true; 
-    clearInterval(intervals[timeId]); 
-    document.getElementById(buttonId).disabled = true; 
-}
-
-for (let i = 1; i <= 6; i++) {
-    updateTime(`time${i}`);
-    document.getElementById(`btn${i}`).addEventListener("click", stopTime);
-}
