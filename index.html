@@ -155,19 +155,42 @@
                         <!-- Improve Job Seeking -->
                         <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4">
                             <span class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">GlassDoar</span>
-                            <h3 class="text-2xl font-medium text-[#00303C] mt-4"> Fix Mobile Button Issue</h3>
+                            <h3 class="text-2xl font-medium text-[#00303C] mt-4"> Improve Job Seeking</h3>
                             <div class="bg-white p-4 rounded-xl">
-                                <p class="text-base font-normal">The mobile button was unresponsive due to a JavaScript event listener issue, requiring a quick fix to ensure seamless user interaction across all devices</p>
+                                <p class="text-base font-normal">Finding a developer job requires a strong portfolio,
+                                    networking, and consistently applying to opportunities on job platforms,company,
+                                    aboard and websites.</p>
                             </div>
                             <div class="flex lg:flex-col xl:flex-row space-y-2 justify-between items-center border-t border-dashed pt-4">
                                 <div>
                                     <h4 class="text-sm font-normal text-[#00303C]">Deadline</h4>
-                                    <h3 class="text-base font-bold text-[#00303C]">10 March 2025</h3>
+                                    <h3 class="text-base font-bold text-[#00303C]">21 March 2025</h3>
                                 </div>
                                 <button  class="btn btn-mobile text-white text-base rounded-md bg-[#3752FD]">Completed</button>
                             </div>
                         </div>
                     </div>
+                </section>
+                <!-- Right side -->
+                <section >
+                    <aside class="bg-white py-5 rounded-xl h-full">
+                        <div>
+                            <!-- activity head -->
+                            <div class="pb-4 space-y-5 text-center">
+                                <div class="flex gap-3 justify-center">
+                                    <img src="assets/activity.png" alt="activity icon">
+                                    <h4>Activity Log</h4>
+                                </div>
+                                <div>
+                                    <button onclick="clearHistory()" class="btn text-white text-base rounded-md bg-[#3752FD]">Clear History</button>
+                                </div>
+                                <hr class="border-dashed border-[1.4px] text-[#3752FD33]">
+                
+                                <div id="logContainer" class="new-history grid gap-3 mx-4">
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
                 </section>
             </div>
         </div>
