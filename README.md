@@ -14,6 +14,7 @@ Technologies Used:
 HTML
 Tailwind CSS
 JavaScript
+
 Getting Started:
 
 Explore the Dev Board project at Dev Board and enhance your task management experience.
